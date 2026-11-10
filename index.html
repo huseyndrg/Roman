@@ -94,7 +94,6 @@
         z-index: -3;
       }
 
-      /* 100% İŞLƏK VƏ MİSTİK CSS DUMAN EFEKTİ */
       .fog-container {
         position: absolute;
         inset: 0;
@@ -181,7 +180,6 @@
         justify-content: center;
       }
 
-      /* ƏSƏRİN BÜTÜN SÖZLƏRİ EYNİ QİZİLİ RƏNGDƏ OLAN BAŞLIĞI */
       h1 {
         margin: 0;
         font-family: 'Cinzel', serif;
@@ -250,7 +248,6 @@
           );
       }
 
-      /* GENİŞLƏNDİRİLMİŞ YUXARI NAVİQASİYA PANELSİ VƏ DİZAYNI */
       .elegant-nav {
         position: relative;
         z-index: 30;
@@ -294,7 +291,6 @@
         text-shadow: 0 0 10px rgba(216, 180, 115, 0.5);
       }
 
-      /* MÜƏLLİFDƏN SÖZÜ DİGƏRLƏRİNDƏN DAHA BÖYÜK */
       .elegant-nav-bottom {
         margin-top: 22px;
         text-align: center;
@@ -306,7 +302,6 @@
         color: #e2ceaa;
       }
 
-      /* YANINDA İNCƏ XƏTLƏR OLAN ROMB İKONLARI */
       .nav-diamond {
         display: inline-flex;
         align-items: center;
@@ -338,7 +333,6 @@
         box-shadow: 0 0 6px rgba(184, 154, 111, 0.3);
       }
 
-      /* "MÜƏLLİFDƏN" SÖZÜNÜN ALTINDAKI BÖYÜK QİZİLİ ROMB VƏ XƏTT */
       .elegant-nav-decoration {
         display: flex;
         align-items: center;
@@ -376,7 +370,6 @@
         border-bottom: 1px solid var(--line);
       }
 
-      /* HAQQINDA BÖLMƏSİ */
       #haqqinda {
         position: relative;
         background-image: url('assets/about background.png');
@@ -404,13 +397,12 @@
         text-shadow: 0 2px 10px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,0.8);
       }
 
-      /* BİRİNCİ ABSAZ - XƏTT SÖZLƏRƏ YAXINLAŞDIRILDI (padding-left: 6px) */
       .lead {
         font-size: clamp(15px, 1.6vw, 19px);
         color: var(--text);
         line-height: 1.45;
         margin: 0 0 20px;
-        padding-left: 6px; /* Xətt mətne yaxınlaşdırıldı */
+        padding-left: 6px;
         border-left: 3px solid var(--olive-bright);
         text-shadow: 0 2px 10px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,0.8);
         max-width: 72%;
@@ -423,16 +415,14 @@
         text-shadow: 0 2px 8px rgba(0,0,0,1), 0 0 4px rgba(0,0,0,0.8);
       }
 
-      /* İKİNCİ VƏ ÜÇÜNCÜ ABSAZLAR İÇİN SOLLAR ORTAYA ÇƏKİLDİ (NAXIŞIN ÜSTÜNƏ DÜŞMƏSİN) */
       .shifted-text {
-        margin-left: 14px; /* Sağa/ortaya doğru çəkildi */
+        margin-left: 14px;
         max-width: 90%;
       }
 
-      /* SİTAT BÖLMƏSİ - QIRMIZI XƏTT SÖZLƏRƏ YAXINLAŞDIRILDI (padding-left: 6px) */
       blockquote {
         margin: 36px 0;
-        padding: 10px 14px 10px 6px; /* Sol boşluq 6px edildi */
+        padding: 10px 14px 10px 6px;
         border-left: 4px solid var(--blood);
         background: rgba(0, 0, 0, 0.3);
         color: var(--text);
@@ -643,7 +633,7 @@
         .shifted-text {
           margin-left: 10px;
         }
-      }    
+      }
     </style>
   </head>
 
@@ -652,13 +642,9 @@
       <div class="elegant-nav-inner">
         <div class="elegant-nav-top">
           <a href="#haqqinda">ROMAN</a>
-          
           <div class="nav-diamond"><span></span></div>
-          
           <a href="#fasil">FƏSİLLƏR</a>
-          
           <div class="nav-diamond"><span></span></div>
-          
           <a href="#personajlar">OBRAZLAR</a>
         </div>
 
@@ -666,7 +652,6 @@
           <a href="#muellifden">MÜƏLLİFDƏN</a>
         </div>
 
-        <!-- MÜƏLLİFDƏN SÖZÜNÜN ALTINDAKI QİZİLİ ROMB VƏ XƏTT -->
         <div class="elegant-nav-decoration">
           <span></span><i></i><span></span>
         </div>
@@ -675,13 +660,10 @@
 
     <header>
       <div class="hero-art" aria-hidden="true"></div>
-      
-      <!-- CANLI DALĞALANAN CSS DUMAN QATI -->
       <div class="fog-container" aria-hidden="true">
         <div class="fog-layer fog-layer-1"></div>
         <div class="fog-layer fog-layer-2"></div>
       </div>
-
       <div class="hero-glow" aria-hidden="true"></div>
 
       <div class="hero-content wrap">
@@ -864,7 +846,7 @@
             <article class="chapter-item">
               <button class="chapter-toggle" type="button" aria-expanded="false">
                 <span class="chapter-visual">
-                  <img src="assets/chapter-7-new.png" alt="Fəsil 7">
+                  <img src="assets/chapter-7.png" alt="Fəsil 7">
                 </span>
 
                 <span class="chapter-headline">
@@ -1001,12 +983,6 @@
         </div>
       </section>
 
-      <section id="iletisim">
-        <div class="wrap">
-          <h2>Əlaqə</h2>
-          <p>Tarix, roman və sənət haqqında daha çox məlumat üçün: <a href="https://www.instagram.com/Huseyn.drg/" target="_blank" rel="noopener noreferrer">@Huseyn.drg</a></p>
-        </div>
-      </section>
     </main>
 
     <footer>
