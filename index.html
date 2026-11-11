@@ -94,6 +94,7 @@
         z-index: -3;
       }
 
+      /* 100% İŞLƏK VƏ MİSTİK CSS DUMAN EFEKTİ */
       .fog-container {
         position: absolute;
         inset: 0;
@@ -180,6 +181,7 @@
         justify-content: center;
       }
 
+      /* ƏSƏRİN BÜTÜN SÖZLƏRİ EYNİ QİZİLİ RƏNGDƏ OLAN BAŞLIĞI */
       h1 {
         margin: 0;
         font-family: 'Cinzel', serif;
@@ -248,6 +250,7 @@
           );
       }
 
+      /* GENİŞLƏNDİRİLMİŞ YUXARI NAVİQASİYA PANELSİ VƏ DİZAYNI */
       .elegant-nav {
         position: relative;
         z-index: 30;
@@ -291,6 +294,7 @@
         text-shadow: 0 0 10px rgba(216, 180, 115, 0.5);
       }
 
+      /* MÜƏLLİFDƏN SÖZÜ DİGƏRLƏRİNDƏN DAHA BÖYÜK */
       .elegant-nav-bottom {
         margin-top: 22px;
         text-align: center;
@@ -302,6 +306,7 @@
         color: #e2ceaa;
       }
 
+      /* YANINDA İNCƏ XƏTLƏR OLAN ROMB İKONLARI */
       .nav-diamond {
         display: inline-flex;
         align-items: center;
@@ -333,6 +338,7 @@
         box-shadow: 0 0 6px rgba(184, 154, 111, 0.3);
       }
 
+      /* "MÜƏLLİFDƏN" SÖZÜNÜN ALTINDAKI BÖYÜK QİZİLİ ROMB VƏ XƏTT */
       .elegant-nav-decoration {
         display: flex;
         align-items: center;
@@ -370,6 +376,7 @@
         border-bottom: 1px solid var(--line);
       }
 
+      /* HAQQINDA BÖLMƏSİ */
       #haqqinda {
         position: relative;
         background-image: url('assets/about background.png');
@@ -397,12 +404,13 @@
         text-shadow: 0 2px 10px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,0.8);
       }
 
+      /* BİRİNCİ ABSAZ - XƏTT SÖZLƏRƏ YAXINLAŞDIRILDI (padding-left: 6px) */
       .lead {
         font-size: clamp(15px, 1.6vw, 19px);
         color: var(--text);
         line-height: 1.45;
         margin: 0 0 20px;
-        padding-left: 6px;
+        padding-left: 6px; /* Xətt mətne yaxınlaşdırıldı */
         border-left: 3px solid var(--olive-bright);
         text-shadow: 0 2px 10px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,0.8);
         max-width: 72%;
@@ -415,14 +423,16 @@
         text-shadow: 0 2px 8px rgba(0,0,0,1), 0 0 4px rgba(0,0,0,0.8);
       }
 
+      /* İKİNCİ VƏ ÜÇÜNCÜ ABSAZLAR İÇİN SOLLAR ORTAYA ÇƏKİLDİ (NAXIŞIN ÜSTÜNƏ DÜŞMƏSİN) */
       .shifted-text {
-        margin-left: 14px;
+        margin-left: 14px; /* Sağa/ortaya doğru çəkildi */
         max-width: 90%;
       }
 
+      /* SİTAT BÖLMƏSİ - QIRMIZI XƏTT SÖZLƏRƏ YAXINLAŞDIRILDI (padding-left: 6px) */
       blockquote {
         margin: 36px 0;
-        padding: 10px 14px 10px 6px;
+        padding: 10px 14px 10px 6px; /* Sol boşluq 6px edildi */
         border-left: 4px solid var(--blood);
         background: rgba(0, 0, 0, 0.3);
         color: var(--text);
@@ -633,7 +643,7 @@
         .shifted-text {
           margin-left: 10px;
         }
-      }
+      }    
     </style>
   </head>
 
@@ -642,9 +652,13 @@
       <div class="elegant-nav-inner">
         <div class="elegant-nav-top">
           <a href="#haqqinda">ROMAN</a>
+          
           <div class="nav-diamond"><span></span></div>
+          
           <a href="#fasil">FƏSİLLƏR</a>
+          
           <div class="nav-diamond"><span></span></div>
+          
           <a href="#personajlar">OBRAZLAR</a>
         </div>
 
@@ -652,6 +666,7 @@
           <a href="#muellifden">MÜƏLLİFDƏN</a>
         </div>
 
+        <!-- MÜƏLLİFDƏN SÖZÜNÜN ALTINDAKI QİZİLİ ROMB VƏ XƏTT -->
         <div class="elegant-nav-decoration">
           <span></span><i></i><span></span>
         </div>
@@ -660,10 +675,13 @@
 
     <header>
       <div class="hero-art" aria-hidden="true"></div>
+      
+      <!-- CANLI DALĞALANAN CSS DUMAN QATI -->
       <div class="fog-container" aria-hidden="true">
         <div class="fog-layer fog-layer-1"></div>
         <div class="fog-layer fog-layer-2"></div>
       </div>
+
       <div class="hero-glow" aria-hidden="true"></div>
 
       <div class="hero-content wrap">
@@ -678,7 +696,7 @@
       <section id="muellifden">
         <div class="wrap">
           <h2>Müəllifdən</h2>
-          <p>Bu səhifə romanın ilkin süjet xətti əsasında hazırlanmış şəxsi müəllif təqdimatıdır. Dərin tarixi araşdırmalara söykənən tam roman üzərində yaradıcılıq işləri hələ də davam edir.</p>
+          <p>Bu səhifə romanın ilkin süjet xətti əsasında hazırlanmış şəxsi müəllif təqdimatıdır. Dərin tarixi araşdırmalara söykənən tam roman üzərində yaradıcılıq işləri hələ də davam edir. Bu sadəcə romanın qaralama səviyyəsindəki ilkin hallarıdır. Bəzi şeyləri unutmayaq deyə yazdığım mətnlərdir. Hələ redaktə edilir.</p>
         </div>
       </section>
 
@@ -687,11 +705,11 @@
           <h2>Haqqında</h2>
 
           <p class="lead">
-            “İnsanlar, göz yaşları və vəba” — XIV əsr orta əsrlər Avropasında, bəşəriyyəti cənginə alan Böyük Vəba epidemiyasının amansız günlərində cərəyan edən qaranlıq tarixi roman.
+            “İnsanlar, göz yaşları və vəba” — XIV əsr orta əsrlər Avropasında, bəşəriyyəti cənginə alan Böyük Vəba epidemiyasının amansız günlərində cərəyan edən qaranlıq tarixi romandır.
           </p>
 
           <p class="shifted-text">
-            Romanın ruhu orta əsr Avropasının məğlubiyyət, qorxu və inam atmosferinə dayanır. Əsərdə tale, obrazlar vəbanın dəhşəti qarşısında insanın öz iç dünyasında itirdiyi ümid və şüurlu sevgi arasında gedən ağır yol nümayiş etdirilir.
+            Romanın ruhu orta əsr Avropasının məğlubiyyət, qorxu və inam atmosferinə dayanır. Əsərdə tale, obrazları vəbanın dəhşəti və insanın öz iç dünyasında itirdiyi ümid və sevgi arasında gedən ağır bir yol nümayiş etdirilir.
           </p>
 
           <p class="shifted-text">
@@ -727,7 +745,7 @@
               <div class="chapter-body">
                 <div class="chapter-copy">
                   <p>
-                    Hadisələr orta əsrlər Avropasında, böyük vəba epidemiyası dövründə keçən hadisələrdən bəhs edir. Romanın baş qəhrəmanı Anna Montelupi de Bellandi adını daşıyan gənc qadındır.
+                    Hadisələr orta əsrlər Avropasında, böyük vəba epidemiyası dövründə keçən hadisələrdən bəhs edir.​Romanın baş qəhrəmanı Anna Montelupi de Bellandi adında kasıb bir kripto pagan (yəni o zamanın qatı xristian zülm və ayrı-seçkiliklərindən qorunmaq üçün özünü xristian kimi göstərən amma əslində Avropanın xristianlıqdan öncəki dini olan paganizmə inanan) ailə olan Montelupi ailəsinin qızıdır. Anna gözəllik adına bir çox şey görmüş, amma heç vaxt bu qədər gözəl bir acı ilə rastlaşmamışdı. O, Padovanın ən istedadlı rəssamlarından biri olan Federiko Afronun tələbəsidir.
                   </p>
                 </div>
               </div>
@@ -749,7 +767,7 @@
               <div class="chapter-body">
                 <div class="chapter-copy">
                   <p>
-                    Anna ətrafa böyük maraqla baxan bir insan idi. Padova və yaxınlıqdaki orta əsr şəhərləri onun həyatında yeni bir keçid nöqtəsi olur.
+                    Anna ətrafa çox böyük bir maraq və heyranlıqla baxan bir insan idi. Tez-tez Padovanın (Venesiya yaxınlıqlarındakı qədim bir orta əsr İtaliya şəhəri) daş döşənmiş küçələrində gəzirdi. Amma bunların içində ən sevdiyi yer şəhərin qərb tərəflərində, kiçik bir meydanla oynadığı, gözəl görünən və mühüm tarixi olan yerlər idi. Anna bu meydanda 9 yaşından bəri Federikonun tarixini öyrənmişdi. Federiko dünyaca məşhur rəssam olsa da, əsla dəbdəbəli deyildi. O uzun müddət idi ki, gözlərdəki xəstəliyinə görə yaşlana bilməyəcək qədər rəsm çəkir, amma düşüncələrində həyatını davam etdirirdi. Tez-tez Annaya deyirdi: “Sən bir gün çox böyük rəssam olacaqsan, amma ilk öncə özünü kəşf etməlisən”.
                   </p>
                 </div>
               </div>
@@ -771,7 +789,7 @@
               <div class="chapter-body">
                 <div class="chapter-copy">
                   <p>
-                    1347-ci ilin noyabr ayında artıq 18 yaşına çatmış Anna və ətrafdakı insanlar yeni bir təhlükənin yaxınlaşdığını hiss etməyə başlayırlar.
+                    1347-ci ilin noyabr ayının dumanlı bir səhəri artıq böyüyüb 18 yaşına çatmış Anna, xırda və sürətli addımlarla yenə qaynadılmış yumurta, bulaq suyu və bir az çörək alırdı. Qala ətrafında duran əsgərlər onun diqqətini çəkdi. Bir qədər sonra Annaya hər şey aydın oldu. Bu gələn əsgərlər çox uzaqlardan, Alpi Venoste ətəklərindən gəlmişdilər. Orta əsrlərdə Alp dağlarının şimal-qərb bölgəsi belə adlanırdı. Castello di Valneraya qalasının baronu Baron Qrafın Jakkenzonun adamları idi. Baron qalanın yeni tikilən kilsəsinin freskalarını çəkmək üçün özünə məşhur rəssam axtarırdı. O, Federikonun Annanı qız kimi yox, böyük bir sənətkar kimi yetişdirdiyini bilirdi, ona görə də onu öz qalasına dəvət edirdi.
                   </p>
                 </div>
               </div>
@@ -793,7 +811,13 @@
               <div class="chapter-body">
                 <div class="chapter-copy">
                   <p>
-                    Anna doğma həyatından ayrılıb yeni bir təhlükə qarşısında dayanmağa məcbur olur. Federiko ilə tanışlığı onun gələcək yolunu dəyişir.
+                    ​Lakin heç bir şey planlaşdırıldığı kimi getmədi, çünki onu tanıyan heç kimin Federikonun bu qədər tez yaşlanıb gücdən düşəcəyi və ölüm yatağında olacağını ağlına belə gətirmirdi. Səfərlərin qorxusu ilə qəribə xəbərlər qala ətrafında bir-birini əvəz edirdi. “Ya Federikonun, ya da ondan daha yaşlı bir rəssamı bura gətirəcəksiniz, əks halda qala zindanın acı siçovulları sizi gözləyir.”
+                  </p>
+                  <p>
+                    ​Federikonun İtaliyanın ən bacarıqlı rəssamlarından olduğunu bilən əsgərlər onun son günlərini yaşadığını görüb qorxuya düşdülər. Xülasə, Federikonun qalaya getməyəcəyini anlayandan sonra əsəbiləşərək ona sual verdilər. Amma bir az da qorxurdular ki, yaşlı Federiko əsəbləşər və onlara yardım etməkdənsə qovardı. Nəhayət, əsgərlərin biri cəsarət edib Federikodan özüm kimi yaşa, ömrünün daha bacarıqlı rəssam olub-olmadığını soruşdu. Yaşlı Federikonun işi cavabı çox qısa idi. “O, pürurlarla dedi: ‘Tələbəm Anna’”.
+                  </p>
+                  <p>
+                    ​Anna həqiqətən də rəssamlıqda bacarıqlı idi, lakin hələ öz potensialını tam kəşf etməmişdi. Üç il əvvəl Federiko bir il boyunca ona fresk sənətini öyrətmişdi. Bu təcrübəsinin kiçik yaşda belə böyük şəhərdə görmək çətin idi. Amma Anna da buna çox sevinirdi. İndi qərar Annanın əlində idi. O, valideynlərinin onun qalaya getməsinə razı olmayacaqlarını bilirdi. Amma digər tərəfdən, həyatı boyu gördüyü səfalətdən qurtulmaq və son zamanlarda anasının yaşlanması ilə bərabər əllərinin titrəməsi, gözlərinin zəifləməsi ilə artıq əvvəlki kimi hörgü hörüb ailənin ehtiyaclarının böyük hissəsini ödəyə bilməməsi ağır idi. Xəstələnəndən sonra evdən çıxıb yola çıxmaq, amma bununla belə yeni bir həyat qurmaq istəyi onu düşündürürdü.
                   </p>
                 </div>
               </div>
@@ -815,7 +839,10 @@
               <div class="chapter-body">
                 <div class="chapter-copy">
                   <p>
-                    Qala qapısında qonağını qarşılamağa gələn Signore Jakkenzo, Annanın gözəlliyinə və həyasızlığına heyran olur.
+                    ​Qala qapısında qonağını qarşılamağa gələn Signore Jakkenzo, yaşlı və beli bükülmüş Federikonun yerinə faytondan zərif və saf gözəlliyi olan Annanı gördü. Bu, bir möcüzə idi. Baronu ildırım vurmuş dəmiryol kimi heyrətləndirdi. Bu qız gəncliyində aşiq olduğu, lakin ona qismət olmayan sevdiyi qıza çox bənzəyirdi.
+                  </p>
+                  <p>
+                    ​Baronun nakam sevgisi yenidən qəlbində cücərdi. Amma həyat ona yeni çətinliklər yaratmışdı. Yaşı əlliyə yaxınlaşmışdı və əsilzadə ailəsindən olan bir xanımla evli idi. Anna isə sadəcə qonaq idi, amma bu xanımın diqqətini çəkdi.
                   </p>
                 </div>
               </div>
@@ -837,7 +864,16 @@
               <div class="chapter-body">
                 <div class="chapter-copy">
                   <p>
-                    Baronun diqqət və qayğısı Annaya yeni bir dünyanı açır. Lakin bu aləmdə dəhşətli bir xəstəlik gizli şəkildə yaxınlaşır.
+                    Baronun həddindən artıq diqqət və qayğısı Annanın gözündən qaçmırdı. Əslində Anna heç vaxt görmədiyi bu diqqətdən məmnun idi, lakin bu diqqət onu həm də qorxudurdu. Qovcaq ağacından hazırlanmış taxta lövhələrin üzərinə yumurta temperası ilə portretləri çəkən, dərdü və balansa bir çox problem yaşayan, Federikonun ona olan təcrübələrini hələ də öz əsərinə yadlaşdırırdı.
+                  </p>
+                  <p>
+                    ​Anna gəldikdən sonra ərinin davranışlarında fərq görən Baronun xanımı, Annanın qarşısında əyləşmiş ərinin baxışlarından və hərəkətlərindən onun niyyətini anlamağa çalışırdı. Lakin həyatında çox az insanla ünsiyyətdə olan saf Anna, Baronun niyyətini anlamırdı.
+                  </p>
+                  <p>
+                    ​Qalaya gəlişindən təxminən 80 gün sonra Anna xəstələndi. Görünür Aralıq dənizinin isti sahilində böyümüş qız Alpi Venostenin soyuq, nəmli və dəyişkən havasına uyğunlaşa bilməmişdi. Burada Alp dağlarının ətəklərində yağışlar çox soyuq şəkildə yağırdı.
+                  </p>
+                  <p>
+                    ​Gizlincə onları dinləyən qalanın xəbərçisi, ulqumsuz Maquona qarı, bir neçə gümüş grosso qarşılığında eşitdiklərini Baronaya çatdırdı. Baron artıq xanımından xilas olmaq üçün vaxtının çatdığını düşünürdü.
                   </p>
                 </div>
               </div>
@@ -859,7 +895,13 @@
               <div class="chapter-body">
                 <div class="chapter-copy">
                   <p>
-                    Qalanın içində xaos baş tutur. Qara ölüm bütün cənuba yayılmağa başlayır və insanlar hər an ölümü qarşısında çaşqınlıqla dayanırlar.
+                    Anna Castello di Valneraya gəlişindən daim qalaya gələn tacir və s qonaqlardan Padova və ətraf şəhərlər haqqında soruşur, oralardakı vəziyyətlə maraqlanırdı. 2 aydan çox keçməsinə baxmayaraq valideynlərini tərk qoyub getməyinin sıxıntısından yaxşılaşmırdı. Və buna görə də daim bir təhlükə içində idi. Üstəlik hər kəsə çatan deyil. Tacirlərin və bəzi qonaqların dediyinə görə vəba artıq böyük bölümlərdə dillənən, bəzi bölgələrdə yayılan şəhərdi. Messinada (Siciliya) başda olmaqla bir çox liman şəhərlərində gələn xəbərlər eyni şeyi deyirdi.
+                  </p>
+                  <p>
+                    Bundan 1 həftə sonra qalaya Tirol Qrafının sarayından heç də xoş xəbərlər gətirməyən rəsmi bir çapar gəldi, qara vəbanın qraflığın bütün cənubuna yayıldığını və hər keçən gün sürətlə daha uzağa çatdığını bildirdi. Saray günü bir elçinin də eyni xəbərlə gəldiyini Baronun için ciddi şəkildə dərk etməsinə səbəb oldu. Üstəlik, bir neçə gün sonra qalaya bir iki zəruri hal xaricində bütün giriş-çıxışları qadağan etdi; qaladakı tacirləri və qonaqları çıxardıb, lazımsız kimi varsa qovdu.
+                  </p>
+                  <p>
+                    Çox keçmədi ki, qara ölüm artıq qala ətrafındakı irili-xırdalı yerlərə gəlib çatdı. Qalada bir sözlə tam bir xaos hökm sürürdü. Hər kəs Baronun ağlını itirdiyini düşünürdü. Vəziyyətin ciddiliyini görən bu adamlar Annanın ailəsinin yanına getmək üçün hazırlaşdı. O, bir an öncə evlərinə getmək və can atırdı. Bunun üçün Signor Jakkenzo ilə görüşdü, vəziyyəti izah etdi. Dünyadakı Baronun ona olan xüsusi diqqəti və ilacı haqqında yaranmış bu qaranlıq söhbətlər qarşısında Anna, Barona qalanın içindən qaçmaq üçün kömək etməsini istədi. Baron ona icazə verdi. Qaladan kənardakı vəziyyətin nə yerdə olduğunu və bu vəziyyətdən yola çıxmağın intihardan fərqi olmadığını izah etdi. Lakin bu xəbər dilə yayıldıqda, Anna getməkdə qərarlı idi.
                   </p>
                 </div>
               </div>
@@ -881,7 +923,13 @@
               <div class="chapter-body">
                 <div class="chapter-copy">
                   <p>
-                    İnsanlar vəbanın mənşəyi ilə bağlı müxtəlif inamlara qapılır. Həqiqət və qorxu arasında seçim etmək zorlaşır.
+                    Anna qaladan qaçdıqdan sonra Baron və adamları onun izinə düşdülər. Anna onları görməsə də qaçmağına yardımçı olan kölənin etdiyi xəbərdarlıqdan yaxşı faydalandı. Qara ölüm şəhərləri viran qoyurdu.
+                  </p>
+                  <p>
+                    MÜHÜM QEYD: O dövrdə insanlar vəbanın yaranması və yayılması barəsində əsassız bir çox versiyalara inanırdılar. Bunlardan biri də ruhunu şeytana satan, Tanrının varlığını inkar edən paganların xəstəliyi yaratması fikri idi. O dövrün insanları xəstəliyin bu cür yayılmasının səbəbini araşdıra bilmədiyi üçün müxtəlif şayiələrə inanırdılar.
+                  </p>
+                  <p>
+                    Fələyin sanki üzünə gülməmək üçün and içdiyi Annanın bu səfərki düşdüyü vəziyyət vəbaya yoluxmaqdan elə də fərqlənməyəcək dərəcədə pis, hətta daha dəhşətli idi. Anna bir neçə gün sonra vəziyyətini dərk edəcək və çətin seçim qarşısında qalacaqdı.
                   </p>
                 </div>
               </div>
@@ -903,7 +951,16 @@
               <div class="chapter-body">
                 <div class="chapter-copy">
                   <p>
-                    Anna və Eli Padovaya doğru yola düşür. Vəba ilə mübarizə, xəyal və həyati qətl arasında qalırlar.
+                    ​Anna və Əlinin Padovaya doğru olan səyahəti keşməkeş və çətinliklərlə dolu idi. Artıq yay ayları gəlməkdə idi və birələrin çoxalmasına kömək edən istilər artırdı. Siçanlar və evlərdəki qaranlıq yerlər xəstəliyin yayılmasını sürətləndirirdi.
+                  </p>
+                  <p>
+                    MÜHÜM QEYD: Artıq yay ayları gəlməkdə idi (bu da vəbanı yayan birələrin daha çox və sürətli çoxalmasına yardımçı olurdu). Unutmayaq ki onları da evlərə daşıyan siçanlar və s. idi.
+                  </p>
+                  <p>
+                    ​Uzun və keşməkeşli yoldan sonra nəhayət, Anna öz məhəllələrinə çatdı. Amma evlərini boş gördü. Qapılar açıq idi, evdə hər şey ələk-vələk idi, amma nə anası, nə də atası görünürdü. Anna ümidini itirməməyə çalışdı.
+                  </p>
+                  <p>
+                    MÜHÜM QEYD: O zamanlar xəstəliyin daha da yayılmasının qarşısını almaq üçün yerli hakimiyyətlər əhalisinin tamamilə öldüyü adaları karantina adaları olması barəsində qərar verdi. Əli Annaya ümidini itirməməsini dedi və ona özü ilə birlikdə valideynlərini axtarmağı təklif etdi.
                   </p>
                 </div>
               </div>
@@ -916,7 +973,7 @@
                 </span>
 
                 <span class="chapter-headline">
-                  Fəsil 10: “Ölüm adası”
+                  Fəsil 10: “Ölüm adası"
                 </span>
 
                 <span class="chapter-indicator">+</span>
@@ -925,7 +982,10 @@
               <div class="chapter-body">
                 <div class="chapter-copy">
                   <p>
-                    Anna və Eli axtarışa davam edir. Ölüm adasında qalanların taleyi məlum olmaz.
+                    ​Anna müəlliminin sözlərini xatırlayıb bütün gücünü topladı və Əli ilə yola düşməyə razı oldu. Böyük ümidlərlə başlayan bu axtarış hər toplama məntəqəsində yeni dəhşətlərlə qarşılaşdı. Adaya gündə yüzlərlə, bəzən minlərlə xəstə gətirilirdi. Onların arasında səhv diaqnoz qoyulmuş sağlam insanlar da vardı. Vəba həkimləri iki-üç gündən bir adanı gəzərək xəstələri axtarırdılar.
+                  </p>
+                  <p>
+                    ​Çətin və təhlükəli axtarış nəticəsində nəhayət, saatlar sonra xəstələrin izdihamından uzaq bir yerdə Anna Əli ilə birlikdə valideynlərini tapdı. Möcüzəvi şəkildə onlardan heç biri xəstələnməmişdi.
                   </p>
                 </div>
               </div>
@@ -947,7 +1007,7 @@
               <div class="chapter-body">
                 <div class="chapter-copy">
                   <p>
-                    Çətinliklər artır, yaranın qaranlıq sularında doğru yolu tapmaq imkansız görünür.
+                    Avarları çəkməyə sadəcə Əlinin taqəti çatacağına görə aralarında belə razılaşdılar ki, öncə yaşlı ər və arvadı sırayla, ən sonda isə gəlib Annanı sahilə çatdıracaqdılar. Gecə-gündüz yola çıxıb, soyuq və çətin yolda ailənin həyatı üçün mübarizə aparırdılar.
                   </p>
                 </div>
               </div>
@@ -964,25 +1024,34 @@
           <div class="grid">
             <article class="card">
               <span class="tag">Baş qəhrəman</span>
-              <h3>ANNA MONTELUPI DE BELLANDI</h3>
-              <p>18 yaşlı, özünü tapa bilən, qəddar zamanlarda iradəsi ilə öne çıxan gənc qadın.</p>
+              <h3>ANNA MONTELUPI</h3>
+              <p>18 yaşlı, yoxsul ailənin çətinlikləri ilə üzləşən, iradəli gənc qız.</p>
             </article>
 
             <article class="card">
               <span class="tag">Müəllim</span>
-              <h3>FEDERIKO AFRON</h3>
-              <p>İtalyan rəssamı, Annanın yaradıcılıq və həyat yolunda ən böyük təsir edən şəxs.</p>
+              <h3>FEDERİKO AFRON</h3>
+              <p>Dövrün tanınmış rəssamı, Annanın həm müəllimi, həm də onu öz qızı kimi qoruyan hamisi.</p>
             </article>
 
             <article class="card">
               <span class="tag">Yoldaş</span>
-              <h3>ELİ</h3>
-              <p>Gənc, qərarsız, lakin inamlı köməkçi. Anna ilə birlikdə çətinlikləri gözü qapalı qarşılayır.</p>
+              <h3>ƏLİ HEYDƏR</h3>
+              <p>Gənc dost, Annanın yolunu bölüşən və çətinliklərdən keçən şəxs.</p>
             </article>
           </div>
         </div>
       </section>
 
+      <section id="iletisim">
+        <div class="wrap">
+          <h2>Əlaqə</h2>
+          <p>
+            Təklif və suallarınız üçün əlaqə: Instagram /
+            <a href="https://www.instagram.com/Huseyn.drg/" target="_blank" rel="noopener noreferrer">@Huseyn.drg</a>
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -994,8 +1063,10 @@
 
       chapterItems.forEach((item) => {
         const toggle = item.querySelector('.chapter-toggle');
+
         toggle.addEventListener('click', () => {
           const isOpen = item.classList.contains('open');
+
           chapterItems.forEach((card) => {
             card.classList.remove('open');
             const btn = card.querySelector('.chapter-toggle');
